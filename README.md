@@ -156,7 +156,7 @@ you can highlight individual words in the text.
 ``
 Life is what happens to you while you are making plans.
                                                       John Lennon
-``
+``<br/>
 Sometimes when making emphasis, we use quote to highlight texts we want to make emphasis. We can do this using the greater than symbol `>` before the text we want to emphasize.
 
 ```
@@ -331,8 +331,10 @@ The numbered list is created like regular line numbering,
 
 ### 5.3. CheckList
 Implementing checklist is simply by using a dash "-" followed by a single space, then a square bracket [].
-- Unchecked checklist: `- []` e.g - [] Todo
-- Checked checklist: `- [x]` e.g - [x] Done
+- Unchecked checklist: `- []` <br/>
+e.g - [] Todo
+- Checked checklist: `- [x]` <br/>
+e.g - [x] Done
 
 [Back to Table of Contents](#Table-of-Contents)
 ____
