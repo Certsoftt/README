@@ -41,10 +41,13 @@ in lowercase letters, conveniently placing README before the rest of the content
    * 3.6. Italics
    * 3.7. Fatty
    * 3.8. Strikethrough
+   * 3.9. Text Comparism and Suggestion
 4. [Insert tables](#Insert-tables)
+   * 4.1. Aligning Table Content
 5. [Lists](#Lists)
     * 5.1. Marked
     * 5.2. Numbered
+    * 5.3. CheckList
 6. [Links](#Links)
     * 6.1. Text hyperlink
     * 6.2. Image link
@@ -154,6 +157,14 @@ you can highlight individual words in the text.
 Life is what happens to you while you are making plans.
                                                       John Lennon
 ``
+Sometimes when making emphasis, we use quote to highlight texts we want to make emphasis. We can do this using the greater than symbol `>` before the text we want to emphasize.
+
+```
+> emphasized text
+```
+
+We can select text by using single backtick wrap round the text like: `emphasized text`
+
 
 ``Logic`` can take you from point A to point B, and ``imagination`` can take you anywhere. (Albert Einstein)
 
@@ -220,6 +231,39 @@ Place text between two double '~' characters and it will turn into
 
 [Back to Table of Contents](#Table-of-Contents)
 ____
+### 3.9. Text Comparism and Suggestion
+Same as implementing code fragment using three(3) backticks and specifying the programming language as describe in [3.4. Text Selection](#34-text-selection). 
+
+For Text comparism you use a `diff` instead of a programming language.
+
+Let say you have a suggestion to make in comparing your observation on a specific change you want to make in a code. For instance, we want to add a change to a line of code while taking out what was there initially. Before, the line of code that we want to remove: 
+
+```js
+const data = []
+```
+After, our suggestion on what we want to have the code changed to:
+
+```js
+const data = {}
+```
+
+We can simply write:
+
+My Suggestion
+
+3 backticks followed by `diff`
+- const data = []
++ const data = {}
+end with 3 backticks
+
+and this should produce:
+```diff
+- const data = []
++ const data = {}
+```
+____
+[Back to Table of Contents](#Table-of-Contents)
+____
 ## Insert tables
 
 simple table
@@ -231,6 +275,38 @@ simple table
 ```
 |Author|Andrey Marinchenko|
 |---|---|
+|Profession| python-developer|
+|Article| About markup in the README|
+
+### 4.1. Aligning Table Content
+
+We can left align, right align, and center-align table of content using column `:` at various positions respectively.
+- Left aligning: place column symbol to the left as shown below. The `Author` Column is left-align
+- Right aligning: place column symbol to the right as shown below. `Andrey Marinchenko` is right-align 
+
+```
+|Author|Andrey Marinchenko|
+|:---|---:|
+|Profession| python-developer|
+|Article| About markup in the README|
+```
+
+|Author|Andrey Marinchenko|
+|:---|---:|
+|Profession| python-developer|
+|Article| About markup in the README|
+
+- center aligning: place column symbol on both sides as shown below. Both `Author` column and `Andrey Marinchenko` is center-align.
+
+```
+|Author|Andrey Marinchenko|
+|:---:|:---:|
+|Profession| python-developer|
+|Article| About markup in the README|
+```
+
+|Author|Andrey Marinchenko|
+|:---:|:---:|
 |Profession| python-developer|
 |Article| About markup in the README|
 
@@ -252,6 +328,11 @@ The numbered list is created like regular line numbering,
 2. second
 3. third
 4. fourth
+
+### 5.3. CheckList
+Implementing checklist is simply by using a dash "-" followed by a single space, then a square bracket [].
+- Unchecked checklist: `- []` e.g - [] Todo
+- Checked checklist: `- [x]` e.g - [x] Done
 
 [Back to Table of Contents](#Table-of-Contents)
 ____
